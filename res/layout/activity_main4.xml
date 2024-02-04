@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/app1_3"
+    tools:context=".MainActivity4">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity">
+
+        <TextView
+            android:id="@+id/step3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="450dp"
+            android:text="STEP 3"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/step3"
+            android:layout_marginTop="20dp"
+            android:text="Ambil foto berdiri tegap dengan menghadap samping "
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/next3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text5"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="#218C74"
+            android:text="SELANJUTNYA"
+            android:textStyle="bold"/>
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/app2"
+    tools:context=".MainActivity5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity">
+
+        <TextView
+            android:id="@+id/maintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="90dp"
+            android:text="iDDY"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:text="Mohon masukkan foto anda"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/text2"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/frontPictureButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="#218C74"
+            android:text="Foto Depan" />
+        <Button
+            android:id="@+id/sidePictureButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/frontPictureButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#218C74"
+            android:text="Foto Samping" />
+
+        <Button
+            android:id="@+id/processButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/sidePictureButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:background="#218C74"
+            android:text="PROSES"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

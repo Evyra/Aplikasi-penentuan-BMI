@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app3"
+    tools:context=".MainActivity6">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SecondActivity">
+
+        <TextView
+            android:id="@+id/maintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="iDDY"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/maintext"
+            android:textColor="@color/white"
+            android:text="Nilai BMI anda"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/bmiStatusImageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/normal"
+            android:layout_below="@id/text2"
+            />
+
+        <TextView
+            android:id="@+id/tbPredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/bmiStatusImageView"
+            android:text="Tinggi Badan :"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bbPredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tbPredTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Berat Badan : "
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/bbPredTextView"
+            android:background="#218C74"
+            android:text="BACK"
+            android:textStyle="bold"/>
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/text2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:background="#218C74"
+            android:text="EXIT"
+            android:textStyle="bold"/>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
